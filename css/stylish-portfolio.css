@@ -28,7 +28,7 @@ body {
     font-size: 5.5em;
     font-weight: 650;
 	color: #FFFACD;
-	 -webkit-text-stroke: 1px #008000;
+	 -webkit-text-stroke: 2px #008000;
 }
 
 .text-vertical-center h2 {
