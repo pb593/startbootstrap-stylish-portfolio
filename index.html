@@ -169,6 +169,15 @@
 
     <!-- Portfolio -->
 	<section id="portfolio" class="portfolio">
+		<script>
+		Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+		Galleria.run('#galleria', {
+			facebook: 'album:150037565020891',
+		 	width: 745,
+		 	height: 550,
+		 	lightbox: true});
+		</script>
+		<div id="galleria"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -213,16 +222,6 @@
         </div>
         <!-- /.container -->
     </section>
-	
-	<script>
-	Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
-	Galleria.run('#galleria', {
-		facebook: 'album:150037565020891',
-	 	width: 745,
-	 	height: 550,
-	 	lightbox: true});
-	</script>
-	<div id="galleria"></div>
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
