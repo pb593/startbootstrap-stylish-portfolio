@@ -168,7 +168,7 @@
     </aside>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+	<section id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -213,6 +213,16 @@
         </div>
         <!-- /.container -->
     </section>
+	
+	<script>
+	Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+	Galleria.run('#galleria', {
+		facebook: 'album:150037565020891',
+	 	width: 745,
+	 	height: 550,
+	 	lightbox: true});
+	</script>
+	<div id="galleria"></div>
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
@@ -283,6 +293,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Galleria Scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="js/galleria/galleria-1.4.2.min.js"></script>
+	<script src="js/galleria/plugins/facebook/galleria.facebook.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
