@@ -88,8 +88,7 @@ Galleria.Facebook.prototype = {
 	// the workaround is to explicitly call the fields we're looking for on a public Facebook album
 	// fields: images, source, picture, link, name
         var url = 'https://graph.facebook.com/' + params['album_id'] + '?callback=?' + 
-        '&fields=photos.fields(images,source,picture,link,name)' + 
-        '&access_token=502167596751075|hoRaGstC9cqoKgFi0d03PTmFHW4';
+        '&fields=photos.fields(images,source,picture,link,name)&access_token=502167596751075|hoRaGstC9cqoKgFi0d03PTmFHW4';
         
         var scope = this;
 
