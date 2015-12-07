@@ -89,7 +89,7 @@ Galleria.Facebook.prototype = {
 	// fields: images, source, picture, link, name
         var url = 'https://graph.facebook.com/' + params['album_id'] + '?callback=?' + 
         '&fields=photos.fields(images,source,picture,link,name)' + 
-        '&access_token=502167596751075|hoRaGstC9cqoKgFi0d03PTmFHW4';
+        '&access_token="502167596751075|hoRaGstC9cqoKgFi0d03PTmFHW4"';
         
         var scope = this;
 
