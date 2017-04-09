@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -35,8 +35,11 @@
 
 <body>
 
-	<!-- Hit counter-->
-	<? php include("counter.php");?>
+    <!-- Language selector -->
+    <select class="btn btn-dark btn-lg toggle" id="langpicker" onchange="select_language(this.options[this.selectedIndex].value)">
+        <option value="en" selected>English</option>
+        <option value="ru">Русский</option>
+    </select>
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -67,7 +70,9 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1 class="shaded">Hello ;)</h1>
+            <h1 class="shaded" lang="en">Hello ;)</h1>
+            <h1 class="shaded" lang="ru">Привет ;)</h1>
+
             <h3 class="shaded">My name is Pavel, I'm a computer programmer</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
@@ -335,14 +340,18 @@
 
     </script>
 
-	<script>
-		<script language="JavaScript">
-		var username = "[your_username]";
-		var hostname = "[your_mail_account_domain]";
-		var linktext = username + "@" + hostname ;
-		document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
-		</script>
-	</script>
+  <script language="JavaScript" type="text/javascript">
+    function select_language(language) {
+      $("[lang]").each(function () {
+          if ($(this).attr("lang") == language)
+              $(this).show();
+          else
+              $(this).hide();
+      });
+    }
+    var picker = document.getElementById("langpicker")
+    window.onload = select_language(picker.options[picker.selectedIndex].value)
+  </script>
 
 </body>
 
